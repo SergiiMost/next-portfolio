@@ -43,11 +43,15 @@ export default function Home() {
               </h1>
             </div>
             <div className={styles.imageWrapper}>
-              <img src='/undraw.svg' className={styles.headerImage}></img>
+              <img
+                src='/undraw.svg'
+                className={styles.headerImage}
+                alt='image showing a person looking at some code'
+              ></img>
             </div>
           </div>
           <div className={styles.arrowWrapper}>
-            <img src='/arrow.svg' className={styles.arrow}></img>
+            <img src='/arrow.svg' className={styles.arrow} alt='an arrow pointing down'></img>
           </div>
         </Wrapper>
       </header>
@@ -95,7 +99,7 @@ export default function Home() {
                       </span>
                     </div>
                     <div className={styles.technologieWrapper}>
-                      <img src='/next.svg'></img>
+                      <img src='/next.svg' alt='next logo'></img>
                       <span>
                         <u>Next.js</u> - React Framework{" "}
                       </span>
@@ -128,7 +132,7 @@ export default function Home() {
                       </span>
                     </div>
                     <div className={styles.toolWrapper}>
-                      <img src='/figma.svg'></img>
+                      <img src='/figma.svg' alt='figma logo'></img>
                       <span>
                         <u>Figma</u> - Interface Design
                       </span>
@@ -163,11 +167,21 @@ export default function Home() {
                 </p>
                 <span>technologies: React Hooks, SCSS </span>
                 <div className={styles.projectLinks}>
-                  <a href='https://sergiimost.github.io/so-filter/' className={styles.projectLink} target='_blank'>
+                  <a
+                    href='https://sergiimost.github.io/so-filter/'
+                    className={styles.projectLink}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <MdLaunch color='#3C61E4' size='2rem' />
                     <span className={styles.linkText}>visit</span>
                   </a>
-                  <a href='https://github.com/SergiiMost/so-filter' className={styles.projectLink} target='_blank'>
+                  <a
+                    href='https://github.com/SergiiMost/so-filter'
+                    className={styles.projectLink}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <FaGithub color='#3C61E4' size='2rem' />
                     <span className={styles.linkText}>code</span>
                   </a>
@@ -188,13 +202,18 @@ export default function Home() {
           <Wrapper>
             <Heading tag='h2'>contacts.</Heading>
             <div className={styles.contactLinksWrapper}>
-              <a href='https://www.linkedin.com/in/sergii-mostovyi/' target='_blank' className={styles.contactLink}>
+              <a
+                href='https://www.linkedin.com/in/sergii-mostovyi/'
+                target='_blank'
+                className={styles.contactLink}
+                rel='noreferrer'
+              >
                 <FaLinkedin color='3C61E4' size='3.8rem' />
               </a>
-              <a href='mailto:s.v.mostovoyi@gmail.com' target='_blank' className={styles.contactLink}>
+              <a href='mailto:s.v.mostovoyi@gmail.com' target='_blank' className={styles.contactLink} rel='noreferrer'>
                 <MdEmail color='3C61E4' size='3.8rem' />
               </a>
-              <a href='https://github.com/SergiiMost' target='_blank' className={styles.contactLink}>
+              <a href='https://github.com/SergiiMost' target='_blank' className={styles.contactLink} rel='noreferrer'>
                 <FaGithub color='3C61E4' size='3.8rem' />
               </a>
             </div>

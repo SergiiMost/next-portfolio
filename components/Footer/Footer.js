@@ -21,7 +21,7 @@ export default function Footer() {
           <div className={styles.footerRight}>
             <p>
               Built with <FcLike /> using{" "}
-              <a href='https://nextjs.org/' target='_blank' className={styles.footerLink}>
+              <a href='https://nextjs.org/' target='_blank' className={styles.footerLink} rel='noreferrer'>
                 Next.js
               </a>
             </p>

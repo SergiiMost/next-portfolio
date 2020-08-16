@@ -29,7 +29,7 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <Link href='/'>
         <a>
-          <img src='/logo.png' className={styles.logo}></img>
+          <img src='/logo.png' className={styles.logo} alt='logo'></img>
         </a>
       </Link>
       <div className={`${styles.mobileOverlay} ${clicked ? styles.mobileOverlayActive : ""}`}></div>

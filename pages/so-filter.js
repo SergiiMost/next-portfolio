@@ -92,7 +92,12 @@ export default function SoFilter({ likes }) {
                   {" "}
                   <MdThumbUp size='2rem' color='#3C61E4' /> <span>{numberLikes}</span>{" "}
                 </div>
-                <a href='https://sergiimost.github.io/so-filter/' target='_blank' className={styles.link}>
+                <a
+                  href='https://sergiimost.github.io/so-filter/'
+                  target='_blank'
+                  className={styles.link}
+                  rel='noreferrer'
+                >
                   <MdLaunch size='2rem' color='#3C61E4' />
                   <span>visit</span>
                 </a>

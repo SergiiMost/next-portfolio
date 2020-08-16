@@ -50,17 +50,13 @@ export default function SoFilter({ likes }) {
             </div>
             <div className={styles.description}>
               <h2 className={styles.topicHeader}>Introduction</h2>
-              <p className='u-mb-2'>
-                {" "}
-                It’s a well-known fact that <b>Stack Overflow (SO)</b> is one of the most valuable practical resources
+              <p className='u-mb-2'>It’s a well-known fact that <b>Stack Overflow (SO)</b> is one of the most valuable practical resources
                 used by programmers. It has an amazing community of people who help one another by answering questions.
                 Over the years SO accumulated lots of questions and answers that help even experienced programmers to
                 fix code bugs or find a correct solution to a problem.
               </p>
               <h2 className={styles.topicHeader}>Project's goal.</h2>
-              <p>
-                {" "}
-                I’m a huge fan of SO. I’ve noticed that by reading good questions and answers I could learn a lot. SO is
+              <p>I’m a huge fan of SO. I’ve noticed that by reading good questions and answers I could learn a lot. SO is
                 an amazingly well-engineered project, however, I was missing an ability to filter out good questions
                 within a selected time frame. Let me explain in a greater detail.
               </p>
@@ -75,9 +71,7 @@ export default function SoFilter({ likes }) {
                 endpoint where required data can be fetched.
               </p>
               <h2 className={styles.topicHeader}>Conclusion.</h2>
-              <p className='u-mb-2'>
-                {" "}
-                I can’t say that it was a challenging project to implement but it was not only a good opportunity to
+              <p className='u-mb-2'>I can’t say that it was a challenging project to implement but it was not only a good opportunity to
                 practically use <b>React Hooks</b> and <b>Context API</b> but also to improve my <b>UI/UX skills</b>. It
                 was a very fun project to work on, and I use this small web app quite often.
               </p>
@@ -88,9 +82,7 @@ export default function SoFilter({ likes }) {
                     <span>go back</span>
                   </a>
                 </Link>
-                <div className={styles.like} onClick={handleLikeClick}>
-                  {" "}
-                  <MdThumbUp size='2rem' color='#3C61E4' /> <span>{numberLikes}</span>{" "}
+                <div className={styles.like} onClick={handleLikeClick}><MdThumbUp size='2rem' color='#3C61E4' /> <span>{numberLikes}</span>{" "}
                 </div>
                 <a
                   href='https://sergiimost.github.io/so-filter/'

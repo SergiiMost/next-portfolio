@@ -185,7 +185,7 @@ export default function Home() {
                     <FaGithub color='#3C61E4' size='2rem' />
                     <span className={styles.linkText}>code</span>
                   </a>
-                  <Link href='/so-filter'>
+                  <Link href='/stackoverflow-filter'>
                     <a className={styles.projectLink}>
                       <BsBoxArrowRight color='#3C61E4' size='2rem' />
                       <span className={styles.linkText}>read more</span>

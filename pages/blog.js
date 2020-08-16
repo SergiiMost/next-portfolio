@@ -5,7 +5,7 @@ import Heading from "../components/Heading/Heading"
 import BlogCard from "../components/BlogCard/BlogCard"
 import Footer from "../components/Footer/Footer"
 import ComingSoon from "../components/ComingSoon/ComingSoon"
-import { prepData } from "./posts/prepData"
+import { prepData } from "../utils/prepData"
 import styles from "../styles/page-styles/blog.module.css"
 
 export default function Blog() {

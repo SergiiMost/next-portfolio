@@ -8,7 +8,7 @@ import Heading from "../../components/Heading/Heading"
 import Footer from "../../components/Footer/Footer"
 import { BsBoxArrowLeft } from "react-icons/bs"
 import { MdThumbUp } from "react-icons/md"
-import { prepData } from "./prepData"
+import { prepData } from "../../utils/prepData"
 import { connectToDatabase } from "../../utils/mongodb"
 import { useState, useEffect } from "react"
 

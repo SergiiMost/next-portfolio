@@ -1,0 +1,58 @@
+.contentWrapper {
+  max-width: 97rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.ol li {
+  list-style-position: inside;
+  margin-left: 2rem;
+}
+
+.chronology {
+  margin-top: 3rem;
+}
+
+.chronologyDays {
+  display: inline-block;
+  padding: 1rem 5rem;
+  background: linear-gradient(90.06deg, rgba(60, 97, 228, 0.2) 0%, rgba(255, 112, 32, 0.2) 100%);
+  border-radius: 8px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.dayWrapper {
+  margin-bottom: 2rem;
+}
+
+.linksWrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin: 4rem 0 6rem;
+}
+
+.link,
+.like {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.link:hover,
+.like:hover {
+  opacity: 0.85;
+}
+
+.link span,
+.like span {
+  margin-left: 0.5rem;
+}
+
+.like {
+  cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.footer {
+  font-size: 1.6rem;
+  background: linear-gradient(to right, rgba(60, 97, 228, 0.03), rgba(233, 122, 60, 0.05));
+  padding: 2rem 0;
+}
+
+.footerContentWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLeft span {
+  margin-left: 0.5rem;
+}
+
+.footerLink {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 550px) {
+  .footerContentWrapper {
+    flex-direction: column;
+  }
+  .footerRight {
+    margin-top: 1rem;
+  }
+}

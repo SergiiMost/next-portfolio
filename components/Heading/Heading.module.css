@@ -1,0 +1,22 @@
+.headingWrapper {
+  text-align: center;
+  margin: 6rem auto;
+}
+
+.headingGradient span {
+  font-weight: 400;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 255, 0) 0%,
+    rgba(255, 0, 255, 0) 16%,
+    rgba(255, 112, 32, 1) 16%,
+    rgba(255, 112, 32, 1) 40%,
+    rgba(255, 0, 255, 0) 40%
+  );
+}
+
+.headingPadding span {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0rem 1rem;
+}

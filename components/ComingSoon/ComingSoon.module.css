@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 94rem;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  border-radius: 8px;
+  background-color: white;
+  transition: transform 0.2s;
+  margin-bottom: 5rem;
+  min-height: 13rem;
+}
+
+.wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.loaderWrapper {
+  display: flex;
+  font-size: 2rem;
+}
+
+.large {
+  min-height: 32.5rem;
+}

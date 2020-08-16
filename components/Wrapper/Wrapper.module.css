@@ -1,0 +1,16 @@
+.pageContainer {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1250px) {
+  .pageContainer {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pageContainer {
+    width: 90vw;
+  }
+}

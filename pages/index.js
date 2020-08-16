@@ -1,209 +1,208 @@
-import Head from 'next/head'
+import Head from "next/head"
+import Link from "next/link"
+import Navbar from "../components/Navbar/Navbar"
+import Wrapper from "../components/Wrapper/Wrapper"
+import Heading from "../components/Heading/Heading"
+import ComingSoon from "../components/ComingSoon/ComingSoon"
+import Footer from "../components/Footer/Footer"
+import { FaChevronRight, FaReact, FaNodeJs, FaTrello } from "react-icons/fa"
+import { DiMongodb } from "react-icons/di"
+import { DiVisualstudio } from "react-icons/di"
+import { MdLaunch, MdEmail } from "react-icons/md"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { BsBoxArrowRight } from "react-icons/bs"
+import styles from "../styles/page-styles/index.module.css"
 
 export default function Home() {
   return (
-    <div className="container">
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Sergii Mostovyi - personal website</title>
+        <link rel='icon' href='/favicon.png' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1'></meta>
+        <meta
+          name='description'
+          content="Sergii Mostovyi's personal website that displays his interests, skills, projects, and contact info."
+        />
+        <meta name='author' content='Sergii Mostovyi'></meta>
       </Head>
 
+      <header className={styles.header}>
+        <Wrapper>
+          <Navbar></Navbar>
+          <div className={styles.lightBackground}></div>
+          <div className={styles.headerContent}>
+            <div className={styles.headerTextWrapper}>
+              <h1 className={styles.headerHeading}>
+                <span className='u-displayBlock'>Hi, I'm Sergii Mostovyi,</span>
+                <span className='u-displayBlock'>a Web Developer</span>
+                <span className='u-displayBlock'>based in Toronto</span>
+                <Link href='#about'>
+                  <a className={styles.headerButton}>Learn more</a>
+                </Link>
+              </h1>
+            </div>
+            <div className={styles.imageWrapper}>
+              <img src='/undraw.svg' className={styles.headerImage}></img>
+            </div>
+          </div>
+          <div className={styles.arrowWrapper}>
+            <img src='/arrow.svg' className={styles.arrow}></img>
+          </div>
+        </Wrapper>
+      </header>
+
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <section className={styles.about} id='about'>
+          <Wrapper>
+            <Heading tag='h2'>about.</Heading>
+            <div className={styles.aboutContentWrapper}>
+              <div className={styles.aboutTextWrapper}>
+                <div className={styles.aboutIconWraper}>
+                  <FaChevronRight color='FF7020' size='2.2rem' />
+                </div>
+                <p className={styles.aboutText}>
+                  I’m a developer who also designs, with a keen interest in web technology and video games.
+                </p>
+              </div>
+              <div className={styles.aboutTextWrapper}>
+                <div className={styles.aboutIconWraper}>
+                  <FaChevronRight color='FF7020' size='2.2rem' />
+                </div>
+                <p className={styles.aboutText}>I’m able to quickly learn new tools and technologies when needed.</p>
+              </div>
+              <div className={styles.aboutTextWrapper}>
+                <div className={styles.aboutIconWraper}>
+                  <FaChevronRight color='FF7020' size='2.2rem' />
+                </div>
+                <p className={styles.aboutText}>
+                  I’m always motivated by a challenge and like to be well-organized to deliver consistent results.
+                </p>
+              </div>
+              <div className={styles.technologiesAndToolsWrapper}>
+                <div className={styles.technologies}>
+                  <div className={styles.aboutTextWrapper}>
+                    <div className={styles.aboutIconWraper}>
+                      <FaChevronRight color='FF7020' size='2.2rem' />
+                    </div>
+                    <p className={styles.aboutText}>Preferred web stack:</p>
+                  </div>
+                  <div className={styles.aboutListWrapper}>
+                    <div className={styles.technologieWrapper}>
+                      <FaReact size='2.4rem' color='#61dafb' />
+                      <span>
+                        <u>React</u>- UI library
+                      </span>
+                    </div>
+                    <div className={styles.technologieWrapper}>
+                      <img src='/next.svg'></img>
+                      <span>
+                        <u>Next.js</u> - React Framework{" "}
+                      </span>
+                    </div>
+                    <div className={styles.technologieWrapper}>
+                      <FaNodeJs size='2.4rem' color='#689f63' />
+                      <span>
+                        <u>Node.js</u> - JavaScript Runtime
+                      </span>
+                    </div>
+                    <div className={styles.technologieWrapper}>
+                      <DiMongodb size='2.4rem' color='#116149' />
+                      <span>
+                        <u>MongoDB</u> - NoSQL Database
+                      </span>
+                    </div>
+                  </div>
+                </div>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+                <div className={styles.tools}>
+                  <div className={styles.aboutTextWrapper}>
+                    <FaChevronRight color='FF7020' size='2.2rem' />
+                    <p className={styles.aboutText}>Tools:</p>
+                  </div>
+                  <div className={styles.aboutListWrapper}>
+                    <div className={styles.toolWrapper}>
+                      <DiVisualstudio size='2.6rem' color='#0082cf' />
+                      <span>
+                        <u>VS Code</u> - Code Editor
+                      </span>
+                    </div>
+                    <div className={styles.toolWrapper}>
+                      <img src='/figma.svg'></img>
+                      <span>
+                        <u>Figma</u> - Interface Design
+                      </span>
+                    </div>
+                    <div className={styles.toolWrapper}>
+                      <FaTrello size='2.4rem' color='#0278bf' />
+                      <span>
+                        <u>Trello</u> - Todo / Managment
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Wrapper>
+        </section>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <section className={styles.projects} id='projects'>
+          <Wrapper>
+            <Heading tag='h2'>projects.</Heading>
+            <div className={styles.projectWrapper}>
+              <div className={styles.projectImageWrapper}>
+                <img src='/so_small.png' alt='a screenshot of a project' className={styles.projectImage}></img>
+              </div>
+              <div className={styles.projectDescriptionWrapper}>
+                <h3 className={styles.projectHeading}>
+                  <u>stackoverflow's filter</u>
+                </h3>
+                <p className={styles.projectText}>
+                  a web app that makes it easy to filter out good questions ( typically 3 upvotes or more ) within
+                  selected period of time on Stack Overflow
+                </p>
+                <span>technologies: React Hooks, SCSS </span>
+                <div className={styles.projectLinks}>
+                  <a href='https://sergiimost.github.io/so-filter/' className={styles.projectLink} target='_blank'>
+                    <MdLaunch color='#3C61E4' size='2rem' />
+                    <span className={styles.linkText}>visit</span>
+                  </a>
+                  <a href='https://github.com/SergiiMost/so-filter' className={styles.projectLink} target='_blank'>
+                    <FaGithub color='#3C61E4' size='2rem' />
+                    <span className={styles.linkText}>code</span>
+                  </a>
+                  <Link href='/so-filter'>
+                    <a className={styles.projectLink}>
+                      <BsBoxArrowRight color='#3C61E4' size='2rem' />
+                      <span className={styles.linkText}>read more</span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <ComingSoon height='large' />
+          </Wrapper>
+        </section>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <section className={styles.contacts} id='contacts'>
+          <Wrapper>
+            <Heading tag='h2'>contacts.</Heading>
+            <div className={styles.contactLinksWrapper}>
+              <a href='https://www.linkedin.com/in/sergii-mostovyi/' target='_blank' className={styles.contactLink}>
+                <FaLinkedin color='3C61E4' size='3.8rem' />
+              </a>
+              <a href='mailto:s.v.mostovoyi@gmail.com' target='_blank' className={styles.contactLink}>
+                <MdEmail color='3C61E4' size='3.8rem' />
+              </a>
+              <a href='https://github.com/SergiiMost' target='_blank' className={styles.contactLink}>
+                <FaGithub color='3C61E4' size='3.8rem' />
+              </a>
+            </div>
+          </Wrapper>
+        </section>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+      <Footer />
+    </>
   )
 }

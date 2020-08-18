@@ -84,7 +84,7 @@ export default function Prepartion({ likes }) {
                 (even if it’s an easy one 😜). The rest 1.5-2 hours will be dedicated either to other topics or to work
                 on a project. I’ll see if this preparation tactic works for me and make adjustments as needed.
               </p>
-              <p>Ok , let’s get started 👩‍💻 !</p>
+              <p>Ok , let’s get started 👨‍💻 !</p>
             </section>
 
             <section className={styles.chronology}>

@@ -11,7 +11,7 @@ export default function Footer() {
           <div className={styles.footerLeft}>
             <div className='u-alignCenter u-mb-05 '>
               <MdCopyright size='2rem' />
-              <span>Sergii Mostovyi, 2021</span>
+              <span>Sergii Mostovyi, 2020</span>
             </div>
             <div className='u-alignCenter'>
               <MdEmail size='2rem' />

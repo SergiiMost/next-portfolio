@@ -1,5 +1,13 @@
 export const prepData = [
   {
+    date: "2020-08-19",
+    tasks: {
+      1: "Finished <b>lectures 74-82</b> of JavaScript Algorithms and Data Structures Masterclass (<a href='https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/' target='_blank' rel='noreferrer'>Udemy</a>)",
+      2: "Got stuck on the problem <b>#20</b> 😞. I'm gonna work through it tomorrow.",
+      3: "Reviewed  chapters <b>4.1-5.1</b> of <a href='https://javascript.info/' target='_blank' rel='noreferrer'>javascript.info</a>",
+    },
+  },
+  {
     date: "2020-08-18",
     tasks: {
       1: "Finished <b>lectures 67-73</b> of JavaScript Algorithms and Data Structures Masterclass (<a href='https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/' target='_blank' rel='noreferrer'>Udemy</a>)",

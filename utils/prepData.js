@@ -1,9 +1,16 @@
 export const prepData = [
   {
+    date: "2020-08-26",
+    tasks: {
+      1: "Solved Leetcode problem <b>121</b> (<a href='https://github.com/SergiiMost/LeetCode/blob/master/Easy_best_time_to_buy_and_sell_stock-121.js' target='_blank' rel='noreferrer'>GitHub</a>)",
+      2: "Reviewed  chapters <b>6.10-6.11</b> of <a href='https://javascript.info/' target='_blank' rel='noreferrer'>javascript.info</a>",
+    },
+  },
+  {
     date: "2020-08-24",
     tasks: {
       1: "Solved Leetcode problem <b>58</b> (<a href='https://github.com/SergiiMost/LeetCode/blob/master/Easy_length_of_last_word-58.js' target='_blank' rel='noreferrer'>GitHub</a>)",
-      3: "Reviewed  chapters <b>6.4-6.9</b> of <a href='https://javascript.info/' target='_blank' rel='noreferrer'>javascript.info</a>",
+      2: "Reviewed  chapters <b>6.4-6.9</b> of <a href='https://javascript.info/' target='_blank' rel='noreferrer'>javascript.info</a>",
     },
   },
   {

@@ -1,5 +1,12 @@
 export const prepData = [
   {
+    date: "2020-08-27",
+    tasks: {
+      1: "Solved Leetcode problem <b>169</b> (<a href='https://github.com/SergiiMost/LeetCode/blob/master/Easy_majority_element-169.js' target='_blank' rel='noreferrer'>GitHub</a>)",
+      2: "Read articles about JWT vs session.",
+    },
+  },
+  {
     date: "2020-08-26",
     tasks: {
       1: "Solved Leetcode problem <b>121</b> (<a href='https://github.com/SergiiMost/LeetCode/blob/master/Easy_best_time_to_buy_and_sell_stock-121.js' target='_blank' rel='noreferrer'>GitHub</a>)",

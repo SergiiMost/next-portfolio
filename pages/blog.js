@@ -29,11 +29,6 @@ export default function Blog() {
         <main className={styles.main}>
           <section>
             <Wrapper>
-              <BlogCard
-                title='An interview  preparation and beyond. Chronological overview of my work. '
-                timeUpdated={prepData[0].date}
-                url='/posts/inretview-prep'
-              />
               <ComingSoon />
             </Wrapper>
           </section>

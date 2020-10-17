@@ -311,6 +311,13 @@
   }
 }
 
+
+@media screen and (max-height: 500px) and (orientation: landscape)  {
+  .header{
+    min-height: 80rem;
+  }
+}
+
 @keyframes bounceDown {
   0% {
     transform: translateY(0);

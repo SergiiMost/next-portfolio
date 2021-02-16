@@ -90,7 +90,7 @@ export default function SoFilter({ likes }) {
                 </blockquote>
               </p>
               <p className='u-mb-05'>
-                In addition to technical requirements I decided to implement some additional features:
+                In addition to the technical requirements, I decided to implement some additional features:
               </p>
               <ol className='u-ml-2 u-mb-2'>
                 <li>

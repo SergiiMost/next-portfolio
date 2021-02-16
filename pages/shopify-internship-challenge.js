@@ -108,8 +108,8 @@ export default function SoFilter({ likes }) {
               </ol>
               <h2 className={styles.topicHeader}>Conclusion.</h2>
               <p>
-                This was an interesting project to work on. I learned how to implement a <b>debounce functionality</b>{' '}
-                to prevent unnecessary API requests. Also, I experimented with different layouts and improved my skills
+                It was an interesting project to work on. I learned how to implement a <b>debounce functionality</b> to
+                prevent unnecessary API requests. Also, I experimented with different layouts and improved my skills
                 with <b>Figma</b>.
               </p>
               <div className={styles.linksWrapper}>

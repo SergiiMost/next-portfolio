@@ -235,7 +235,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <ComingSoon height='large' />
+            {/* <ComingSoon height='large' /> */}
           </Wrapper>
         </section>
 

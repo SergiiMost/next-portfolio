@@ -162,7 +162,7 @@ export default function Home() {
                   <u>Shopify's internship challenge (2021)</u>
                 </h3>
                 <p className={styles.projectText}>
-                  a webpage that can search OMDB for movies, and allow the user to save their favorite films they feel
+                  a webpage that can search OMDB for movies and allow the user to save their favorite films they feel
                   should be up for nomination.
                 </p>
                 <span>technologies: React, CSS </span>

@@ -27,8 +27,11 @@
   line-height: 1.5;
 }
 
-.description p::first-letter {
-  margin-left: 2rem;
+.description b,
+.description h2,
+.description h3,
+.description h4 {
+  font-weight: 500;
 }
 
 .topicHeader {
@@ -63,4 +66,25 @@
 
 .like {
   cursor: pointer;
+}
+
+.blockquote {
+  margin: 1rem 0 1rem 3rem;
+  opacity: 0.85;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.blockquote > * {
+  margin-left: 2rem;
+}
+
+.blockquote ol,
+.blockquote ul {
+  margin-left: 5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .blockquote {
+    margin: 1rem 0 1rem 1rem;
+  }
 }

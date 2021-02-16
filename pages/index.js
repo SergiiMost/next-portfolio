@@ -1,17 +1,17 @@
-import Head from "next/head"
-import Link from "next/link"
-import Navbar from "../components/Navbar/Navbar"
-import Wrapper from "../components/Wrapper/Wrapper"
-import Heading from "../components/Heading/Heading"
-import ComingSoon from "../components/ComingSoon/ComingSoon"
-import Footer from "../components/Footer/Footer"
-import { FaChevronRight, FaReact, FaNodeJs, FaTrello } from "react-icons/fa"
-import { DiMongodb } from "react-icons/di"
-import { DiVisualstudio } from "react-icons/di"
-import { MdLaunch, MdEmail } from "react-icons/md"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
-import { BsBoxArrowRight } from "react-icons/bs"
-import styles from "../styles/page-styles/index.module.css"
+import Head from 'next/head'
+import Link from 'next/link'
+import Navbar from '../components/Navbar/Navbar'
+import Wrapper from '../components/Wrapper/Wrapper'
+import Heading from '../components/Heading/Heading'
+import ComingSoon from '../components/ComingSoon/ComingSoon'
+import Footer from '../components/Footer/Footer'
+import { FaChevronRight, FaReact, FaNodeJs, FaTrello } from 'react-icons/fa'
+import { DiMongodb } from 'react-icons/di'
+import { DiVisualstudio } from 'react-icons/di'
+import { MdLaunch, MdEmail } from 'react-icons/md'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { BsBoxArrowRight } from 'react-icons/bs'
+import styles from '../styles/page-styles/index.module.css'
 
 export default function Home() {
   return (
@@ -101,7 +101,7 @@ export default function Home() {
                     <div className={styles.technologieWrapper}>
                       <img src='/next.svg' alt='next logo'></img>
                       <span>
-                        <u>Next.js</u> - React Framework{" "}
+                        <u>Next.js</u> - React Framework{' '}
                       </span>
                     </div>
                     <div className={styles.technologieWrapper}>
@@ -155,17 +155,58 @@ export default function Home() {
             <Heading tag='h2'>projects.</Heading>
             <div className={styles.projectWrapper}>
               <div className={styles.projectImageWrapper}>
+                <img src='/shopify_small.png' alt='a screenshot of a project' className={styles.projectImage}></img>
+              </div>
+              <div className={styles.projectDescriptionWrapper}>
+                <h3 className={styles.projectHeading}>
+                  <u>Shopify's internship challenge (2021)</u>
+                </h3>
+                <p className={styles.projectText}>
+                  a webpage that can search OMDB for movies, and allow the user to save their favorite films they feel
+                  should be up for nomination.
+                </p>
+                <span>technologies: React, CSS </span>
+                <div className={styles.projectLinks}>
+                  <a
+                    href='https://sergiimost.github.io/shoppies/'
+                    className={styles.projectLink}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <MdLaunch color='#3C61E4' size='2rem' />
+                    <span className={styles.linkText}>visit</span>
+                  </a>
+                  <a
+                    href='https://github.com/SergiiMost/shoppies'
+                    className={styles.projectLink}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <FaGithub color='#3C61E4' size='2rem' />
+                    <span className={styles.linkText}>code</span>
+                  </a>
+                  <Link href='/shopify-internship-challenge'>
+                    <a className={styles.projectLink}>
+                      <BsBoxArrowRight color='#3C61E4' size='2rem' />
+                      <span className={styles.linkText}>read more</span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className={styles.projectWrapper}>
+              <div className={styles.projectImageWrapper}>
                 <img src='/so_small.png' alt='a screenshot of a project' className={styles.projectImage}></img>
               </div>
               <div className={styles.projectDescriptionWrapper}>
                 <h3 className={styles.projectHeading}>
-                  <u>stackoverflow's filter</u>
+                  <u>stackoverflow filter</u>
                 </h3>
                 <p className={styles.projectText}>
                   a web app that makes it easy to filter out good questions ( typically 3 upvotes or more ) within
                   selected period of time on Stack Overflow
                 </p>
-                <span>technologies: React Hooks, SCSS </span>
+                <span>technologies: React, SCSS </span>
                 <div className={styles.projectLinks}>
                   <a
                     href='https://sergiimost.github.io/so-filter/'

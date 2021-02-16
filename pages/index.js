@@ -163,7 +163,7 @@ export default function Home() {
                 </h3>
                 <p className={styles.projectText}>
                   a webpage that can search OMDB for movies and allow the user to save their favorite films they feel
-                  should be up for nomination.
+                  should be up for nomination
                 </p>
                 <span>technologies: React, CSS </span>
                 <div className={styles.projectLinks}>

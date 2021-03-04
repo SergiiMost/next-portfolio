@@ -123,7 +123,7 @@ export default function SoFilter({ likes }) {
                   <MdThumbUp size='2rem' color='#3C61E4' /> <span>{numberLikes}</span>{' '}
                 </div>
                 <a
-                  href='https://sergiimost.github.io/so-filter/'
+                  href='https://sergiimost.github.io/shoppies/'
                   target='_blank'
                   className={styles.link}
                   rel='noreferrer'
